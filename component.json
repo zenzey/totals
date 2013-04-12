@@ -1,0 +1,17 @@
+{
+  "name": "totals",
+  "description": "list of total number of a list of items",
+  "dependencies": {
+    "component/type": "*",
+    "component/object": "*",
+    "component/dom": "*"
+    },
+  "development": {},
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "totals.css"
+  ]
+}

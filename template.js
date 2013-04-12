@@ -1,0 +1,1 @@
+module.exports = '<a data-id="" class="metric">\n  <span class="metric-title"></span>\n  <span class="metric-value"></span>\n</a>\n';

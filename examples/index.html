@@ -1,0 +1,77 @@
+<html>
+<head>
+  <title>Totals Component Example</title>
+  <link rel="stylesheet" type="text/css" href="../build/build.css">
+  <script type="text/javascript" src="../build/build.js"></script>
+</head>
+<body>
+  <div id="consume"></div>
+  <hr />
+  <div id="network"></div>
+
+  <script type="text/javascript">
+    /**
+     * Require `Totals` component.
+     */
+    var totals = require('totals');
+
+    /**
+     * Consume data.
+     */
+    var consume = {
+        data: {
+            sent: 642
+          , replies: 202
+          , retweets: 26
+          , link_clicks: 1080
+          , ctr: 12
+          , received: 23412
+        }
+      , titles: {
+          sent: "Sent Tweets"
+        , replies: "Replies"
+        , retweets: "Retweets"
+        , link_clicks: "Link CLicks"
+        , ctr: "CTR %"
+        , received: "Consumed"
+      }
+    }
+
+    /**
+     * Network Data.
+     */
+    var network = {
+        data: {
+            upload: 25
+          , download: 1024
+          , transfer: 0.54
+        }
+      , titles: {
+          upload: "Upload"
+        , download: "Download"
+        , transfer: "Transfer Rate"
+      }
+    }
+
+    /**
+     * Consume metrics.
+     */
+    var consumeMetrics = totals('#consume', consume.data);
+
+    consumeMetrics
+      .option('titles', consume.titles)
+      .render();
+
+    /**
+     * Network metrics.
+     */
+    var networkMetrics = totals('#network', {}, {titles: network.titles});
+
+    networkMetrics
+      .set(network.data)
+      .option('direction', 'vertical')
+      .render();
+
+  </script>
+</body>
+</html>
