@@ -1,17 +1,16 @@
 {
   "name": "totals",
-  "description": "list of total number of a list of items",
+  "repo": "zenzey/totals",
+  "description": "Totalized-data UI Component.",
+  "version": "0.0.1",
+  "keywords": [ "total", "metric", "ui" ],
   "dependencies": {
     "component/type": "*",
     "component/object": "*",
     "component/dom": "*"
     },
   "development": {},
-  "scripts": [
-    "index.js",
-    "template.js"
-  ],
-  "styles": [
-    "totals.css"
-  ]
+  "scripts": [ "index.js", "template.js" ],
+  "styles": [ "totals.css" ],
+  "licence": "MIT"
 }
