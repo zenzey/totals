@@ -1,4 +1,5 @@
-0.1.0 / 2013-04-12
+
+0.0.1 / 2013-04-12 
 ==================
 
-  * Release zenzey/totals component.
+  * Release of Totals component.
